@@ -227,6 +227,14 @@ footer div span ul li{  /* imegenes de redes sociales */
     border: solid 1px rgb(155, 155, 155);
 }
 
+.aside a{
+    color: rgb(255, 69, 69);
+}
+
+.aside a:hover{
+    color:rgb(0, 0, 157)
+}
+
 .aside ul {
     list-style: none;
     padding: 5px;
