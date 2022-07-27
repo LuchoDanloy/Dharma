@@ -399,6 +399,20 @@ footer div span ul li{  /* imegenes de redes sociales */
     flex-direction: row;
 }
 
+/*CLASES DE BOOTSTRAP MODIFICADAS O ADAPTADAS*/
+
+.nav-pills {
+    --bs-nav-pills-border-radius: 0.375rem;
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: #fd900d;
+}
+
+.nav {
+    --bs-nav-link-color: #fd900d;
+    --bs-nav-link-hover-color: rgb(255, 100, 17);
+    display: contents;
+}
+
 /* DESDE 710PX PARA ABAJO ME VA A APLICAR ESTOS CAMBIOS */
 @media screen and (max-width: 710px ) {
     h1 {
@@ -423,7 +437,7 @@ footer div span ul li{  /* imegenes de redes sociales */
     }
 
     .multimedia img{
-        margin: 3px 5px;
+        margin: 3px 5px; 
     }
 
     .contenedorNosotros span{
