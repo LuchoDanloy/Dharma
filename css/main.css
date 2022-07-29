@@ -154,10 +154,10 @@ footer div span ul li{  /* imegenes de redes sociales */
     padding: 20px;
 }
 
-.contenedorInicio p{
+.contenedorInicio p{ 
     width: 700px;
     height: 200px;
-    background-color: rgba(255, 255, 255, 0.195);
+    background-color: rgba(255, 255, 255, 0.195);; 
     padding-left: 10px;
 }
 
@@ -191,7 +191,7 @@ footer div span ul li{  /* imegenes de redes sociales */
 
 .camposDeTexto{
     width: 400px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     border: 1px solid rgba(255, 122, 39, 0.477);
 }
@@ -274,13 +274,23 @@ footer div span ul li{  /* imegenes de redes sociales */
     transform: scale(1.1);
 }
 
+
 /*DESCRIPCION DE CADA UNA DE LAS TARJETAS DE LA GALERIA*/
-.galeria section div{
+/* .galeria section div{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
+} */
+
+.card{
+    width: 13rem;
+    margin: 2px;
+    box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);   
 }
+
 
 .importes{
     color: #ff7a27;
@@ -360,13 +370,12 @@ footer div span ul li{  /* imegenes de redes sociales */
     align-items: center;
     margin: 30px 0;
     padding: 30px 0;
-    border-top: solid 1px rgb(195, 195, 195);
 }
 
-.contenedorNosotros span{
+/* .contenedorNosotros span{
     width: 60%;
     margin: 40px;
-}
+} */
 
 .contenedorProductos{
     margin: 30px 0;
@@ -410,7 +419,21 @@ footer div span ul li{  /* imegenes de redes sociales */
 .nav {
     --bs-nav-link-color: #fd900d;
     --bs-nav-link-hover-color: rgb(255, 100, 17);
-    display: contents;
+}
+
+.containerIndex{
+    margin-bottom: 50px;
+}
+
+.carousel-inner {
+    height: 500px;
+    margin: 50px 0;
+}
+
+.pagination{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* DESDE 710PX PARA ABAJO ME VA A APLICAR ESTOS CAMBIOS */
@@ -441,8 +464,8 @@ footer div span ul li{  /* imegenes de redes sociales */
     }
 
     .contenedorNosotros span{
-        width: 80%;
-        margin: 0px;
+/*         width: 80%;
+        margin: 0px; */
         margin-bottom: 20px;
     }
 
@@ -480,6 +503,11 @@ footer div span ul li{  /* imegenes de redes sociales */
     .fotosMiniatura{
         justify-content: space-evenly;
     }
+
+    .carousel-inner {
+        height: auto;
+    }
+
 }
 
 
@@ -506,6 +534,7 @@ footer div span ul li{  /* imegenes de redes sociales */
         display: flex;
         flex-direction: column;
         padding: 8px;
+        align-items: center;
     }
 
     .camposDeTexto{
@@ -567,6 +596,10 @@ footer div span ul li{  /* imegenes de redes sociales */
 
     .iconosHeder img {
         width: 40px;
+    }
+
+    .carousel-inner {
+        height: auto;
     }
 
 }
