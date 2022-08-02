@@ -24,6 +24,12 @@
     <!-- FUENTE Yanone Kaffeesatz -->
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 
+    <!-- ANIMACIONES  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
+    <!-- ICONOS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <title>Inicio</title>
 
 </head>
@@ -35,8 +41,15 @@
         <!-- CONTENEDOR DHARMA -->
         <div class="barraHeader">
             <div class="iconosHeder">
-                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331926.png" alt="icono ingresar">
-                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="icono carrito">
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331926.png" alt="icono ingresar">
+                    <p>INGRESAR</p>
+                </span>
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="icono carrito">
+                    <p>CARRITO</p>
+                </span>
+
             </div>
 
             <h1>Dharma</h1>
@@ -49,20 +62,22 @@
         <!--LISTA-->
 
         <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
+            <li class="nav-item animate__animated animate__bounceIn animate__delay-2s">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item animate__animated animate__bounceIn animate__delay-2s">
                 <a class="nav-link" href="pages/productos.html">Productos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item animate__animated animate__bounceIn animate__delay-2s">
                 <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item animate__animated animate__bounceIn animate__delay-2s">
                 <a class="nav-link" href="pages/contacto.html">Contacto</a>
             </li>
         </ul>
+   
     </nav>
+
 
     <!--CUERPO O CONTENIDO-->
     <main>
@@ -80,42 +95,35 @@
 
         <div class="container containerIndex">
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-7">
+                <div class="col-sm-6 col-md-6 col-lg-8 animate__animated animate__backInLeft">
                     <!-- TEXTO INICIO -->
-                    <p class="textos d-flex justify-content-start">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reiciendis doloribus rem
-                        quam
-                        numquam, maxime
-                        a quia vero nulla eligendi, dignissimos suscipit tempora beatae adipisci nihil aut ipsum ex.
-                        Incidunt.
-                        a quia vero nulla eligendi, dignissimos suscipit tempora beatae adipisci nihil aut ipsum ex.
-                        Incidunt.
+                    <p class="textos">
+                        La misión de Dharma es satisfacer a sus clientes en todo momento a través de la excelente 
+                        atención y la moda siempre al mejor precio, ofreciendo productos especialmente para damas 
+                        y caballeros bajo los más altos estándares de calidad. Buscamos la evolución manteniendo 
+                        las últimas tendencias del mercado.
                     </p>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-5">
+                <div class="col-sm-6 col-md-6 col-lg-4 animate__animated animate__backInRight">
                     <!-- IMAGEN INICIO -->
-                    <img class="shadowRigth mw-100 d-flex justify-content-end" src="https://dummyimage.com/300x200/000/fff" alt="imagen de inicio">
+                    <img class="shadowRigth mw-100 d-flex justify-content-end" src="https://images.pexels.com/photos/3839432/pexels-photo-3839432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen de inicio">
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row justify-content-md-center justify-content-lg-end">
-                <div class="col-sm-12 col-md-6 col-lg-5">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 animate__animated animate__backInLeft">
                     <!-- IMAGEN INICIO -->
-                    <img class="shadowRigth mw-100 d-flex justify-content-start" src="https://dummyimage.com/300x200/000/fff" alt="imagen de inicio">
+                    <img class="shadowRigth mw-100 d-flex justify-content-start" src="https://images.pexels.com/photos/8311890/pexels-photo-8311890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen de inicio">
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-7">
+                <div class="col-sm-6 col-md-6 col-lg-8 animate__animated animate__backInRight">
                     <!-- TEXTO INICIO -->
                     <p class="textos d-flex justify-content-end">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reiciendis doloribus rem
-                        quam
-                        numquam, maxime
-                        a quia vero nulla eligendi, dignissimos suscipit tempora beatae adipisci nihil aut ipsum ex.
-                        Incidunt.
-                        a quia vero nulla eligendi, dignissimos suscipit tempora beatae adipisci nihil aut ipsum ex.
-                        Incidunt.
+                        Nos destaca la innovación, la exclusividad, la creatividad, la distinción, y la alta productividad 
+                        que se preocupa por satisfacer al cliente dándole una excelente atención, además de reforzar 
+                        la imagen femenina y masculina.
                     </p>
                 </div>
 
@@ -123,49 +131,59 @@
         </div>
         
         <!-- ******************************************************************************* -->
-
         <!-- CARRUSEL DE FOTOS -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-sm-12 col-md-10 col-lg-12 ">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="d-block w-100" alt="CARRUCEL SALE">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/5531541/pexels-photo-5531541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="d-block w-100" alt="CARRUCEL SALE">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="d-block w-100" alt="CARRUCEL SALE">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/7679866/pexels-photo-7679866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    class="d-block w-100" alt="CARRUCEL SALE">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.pexels.com/photos/5632346/pexels-photo-5632346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        class="d-block w-100" alt="CARRUCEL SALE">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.pexels.com/photos/5868272/pexels-photo-5868272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        class="d-block w-100" alt="CARRUCEL SALE">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://img.freepik.com/vector-premium/super-venta-banner-oferta-especial-fin-semana_180786-45.jpg?w=1500"
-                        class="d-block w-100" alt="CARRUCEL SALE">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.pexels.com/photos/5632363/pexels-photo-5632363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        class="d-block w-100" alt="CARRUCEL SALE">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </div>       
 
+    
+        <!-- WHATSAPP -->
+        <a href="https://web.whatsapp.com/" class="whatsapp animate__animated animate__zoomInLeft" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
 
     </main>
 

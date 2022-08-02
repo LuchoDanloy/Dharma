@@ -22,6 +22,12 @@
 
     <!-- FUENTE Yanone Kaffeesatz -->
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- ANIMACIONES  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
+    <!-- ICONOS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <title>Productos</title>
 </head>
@@ -33,8 +39,15 @@
         <!-- CONTENEDOR DHARMA -->
         <div class="barraHeader">
             <div class="iconosHeder">
-                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331926.png" alt="icono ingresar">
-                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="icono carrito">
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331926.png" alt="icono ingresar">
+                    <p>INGRESAR</p>
+                </span>
+                <span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="icono carrito">
+                    <p>CARRITO</p>
+                </span>
+
             </div>
 
             <h1>Dharma</h1>
@@ -79,14 +92,13 @@
             <!--Buscador de Productos-->
             <div class="buscadorProductos">
                 <input class="camposDeTexto" type="text" placeholder="Buscar">
-                <button type="button" class="btn btn-outline-dar">Buscar</button>
+                <button type="button" class="btn btn-light">Buscar</button>
             </div>
 
             <!-- Grilla de Productos -->
             <div class="grillaCentrada">
 
-                <div class="gridProductos">
-
+                <div class="gridProductos"> 
                     <!-- ASIDE BOOTSTRAP-->
 
                     <div class="aside flex-shrink-0 p-3" >
@@ -141,68 +153,104 @@
                     <!-- GALERIA -->
 
                     <div class="galeria">
-                        <div class="card">
-                            <img src="https://dummyimage.com/180x180/fc7e00/ffffff&text=+VIEW" class="card-img-top " alt="foto galeria">
+                        <div class="card ">
+                            <img src="https://www.surmujer.cl/17854_pic/cdn-5_Ch%C3%A1ndal-de-ni%C3%B1os-2020-oto%C3%B1o-sudadera-de-manga-larga.jpg" class="card-img-top " alt="foto galeria">
                             <div class="card-body">
-                            <h5 class="card-title">Jean Negro</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="productoView.html" class="btn btn-primary">Comprar</a>
+                            <h5 class="card-title">Conjunto Florencia</h5>
+                            <div class="card-text">Conjunto de algodon.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://dummyimage.com/180x180/fc7e00/ffffff&text=+VIEW" class="card-img-top" alt="foto galeria">
+                            <img src="https://ae01.alicdn.com/kf/H43e91c025b0441fd8c251024fe0870ccc/Nuevo-dise-o-2021-de-moda-de-las-mujeres-conjuntos-de-sudaderas-Casual-primavera-top-corto.jpg_Q90.jpg_.webp" class="card-img-top" alt="foto galeria">
                             <div class="card-body">
-                            <h5 class="card-title">Jean Cargo</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="productoView.html" class="btn btn-primary">Comprar</a>
+                            <h5 class="card-title">Conjunto Silvana</h5>
+                            <div class="card-text">Conjunto de morley.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$6000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://dummyimage.com/180x180/fc7e00/ffffff&text=+VIEW" class="card-img-top" alt="foto galeria">
+                            <img src="https://primedia.primark.com/s/primark/210039957_ms?locale=en-*,sl-*,*&$product-thumbnail$" class="card-img-top" alt="foto galeria">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="productoView.html" class="btn btn-primary">Comprar</a>
+                            <h5 class="card-title">Sweater Bahia</h5>
+                            <div class="card-text">Sweater de lana.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://dummyimage.com/180x180/fc7e00/ffffff&text=+VIEW" class="card-img-top" alt="foto galeria">
+                            <img src="https://ae01.alicdn.com/kf/H9f65ff3b70ac432aaa0b7f4ab05d7d03i/Traje-de-gasa-para-ni-as-conjunto-de-ropa-sin-mangas-pantalones-cortos-de-ocio-conjuntos.jpg" class="card-img-top" alt="foto galeria">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="productoView.html" class="btn btn-primary">Comprar</a>
+                            <h5 class="card-title">Conjunto Claudia</h5>
+                            <div class="card-text">conjunto de seda.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://dummyimage.com/180x180/fc7e00/ffffff&text=+VIEW" class="card-img-top" alt="foto galeria">
+                            <img src="https://ae01.alicdn.com/kf/Hacf6f84bc5624c48bdeb3f9ed18ccf29I/Conjuntos-de-12-prendas-de-vestir-para-ni-as-10-Pantalones-cortos-traje-para-beb-s.jpg" class="card-img-top" alt="foto galeria">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="productoView.html" class="btn btn-primary">Comprar</a>
+                            <h5 class="card-title">Conjunto Beatriz</h5>
+                            <div class="card-text">conjunto frizado.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://dummyimage.com/180x180/fc7e00/ffffff&text=+VIEW" class="card-img-top" alt="foto galeria">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnoxtx44FrHVst9cth8kmMkdywkC2jL-m3u6xZY-BVbKetUl6eUhaij13Ld6T4b-IHSIE&usqp=CAU" class="card-img-top" alt="foto galeria">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="productoView.html" class="btn btn-primary">Comprar</a>
+                            <h5 class="card-title">Conjunto Zoe</h5>
+                            <div class="card-text">Conjunto niña.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://dummyimage.com/180x180/fc7e00/ffffff&text=+VIEW" class="card-img-top" alt="foto galeria">
+                            <img src="https://ae01.alicdn.com/kf/HTB17Iv7RVXXXXc6XpXXq6xXFXXXw/Conjunto-de-ropa-para-ni-os-peque-os-de-0-a-24-meses-camiseta-con-pesta.jpg" class="card-img-top" alt="foto galeria">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="productoView.html" class="btn btn-primary">Comprar</a>
+                            <h5 class="card-title">Conjunto Lara</h5>
+                            <div class="card-text">Calza y remera.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="https://dummyimage.com/180x180/fc7e00/ffffff&text=+VIEW" class="card-img-top" alt="foto galeria">
+                            <img src="https://rotulwork.es/wp-content/uploads/2018/11/220-WORKSHELL-SPORT-S8640-700x700.jpg" class="card-img-top" alt="foto galeria">
                             <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="productoView.html" class="btn btn-primary">Comprar</a>
+                            <h5 class="card-title">Campera Rock</h5>
+                            <div class="card-text">campera de cuero.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://media.nidux.net/pull/700/700/10876/8546-product-626868a98c0ba-4080102103.jpg" class="card-img-top" alt="foto galeria">
+                            <div class="card-body">
+                            <h5 class="card-title">Conjunto Sleep</h5>
+                            <div class="card-text">Pijama de seda.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://media.nidux.net/pull/700/700/10876/9636-product-62cda675a264f-4080103002.jpg" class="card-img-top" alt="foto galeria">
+                            <div class="card-body">
+                            <h5 class="card-title">Conjunto Bed</h5>
+                            <div class="card-text">Pijama de algodon.</div>
+                            <div class="card-text stock">En Stock</div>
+                            <p class="card-text precio">$5000</p>
+                            <a href="productoView.html" class="btn btn-dark">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -222,6 +270,10 @@
         
         </section>
 
+        <!-- WHATSAPP -->
+        <a href="https://web.whatsapp.com/" class="whatsapp animate__animated animate__zoomInLeft" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
 
     </main>
 
