@@ -1,0 +1,59 @@
+@import "variables";
+
+//SOMBRAS PARA IMAGENES/TARJETAS/ETC
+.shadowRigth{
+    box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+}
+
+.shadowLeft{
+    box-shadow: -5px 6px 14px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 6px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 6px 14px 0px rgba(0,0,0,0.75);
+}
+
+.multimedia{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+
+    img{
+        margin: 40px 10px;
+    }
+}
+
+.button{
+    width: 80px;
+    padding: 8px;
+    border: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+}
+
+//WHATSAPP
+.whatsapp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: $Whatsapp-color;
+    color: #fff;
+    border-radius: 55px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    animation-delay: 2s;
+
+    & :hover{
+        text-decoration: none;
+        color: $Whatsapp-color;
+        background: #fff;;
+    }
+}
+

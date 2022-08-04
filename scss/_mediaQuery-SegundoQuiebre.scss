@@ -1,0 +1,119 @@
+@import "variables";
+
+/* DESDE EL SEGUNDO QUIEBRE PARA ABAJO ME VAN A APLICAR ESTOS CAMBIOS */
+@media screen and (max-width: $segundoQuiebre ) {
+    nav{
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+    } 
+
+    .contenedorInicio{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .textos{
+        margin-top: 20px;
+    }
+
+    .buscadorProductos{
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        align-items: center;
+    }
+
+    .camposDeTexto{
+        width: 300px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 122, 39, 0.477);
+    }
+
+    .flexRowColumn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tipoYNroDocumento{
+        div{
+            padding:8px 0;
+        }
+    } 
+    
+    .contenedorContacto{
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .contenedorContacto{
+        section{
+            border: 0;        
+        }
+    } 
+
+    .formContacto{
+        width: 255px;
+        margin: 0;
+        font-size: 14px;
+    }
+    .formContacto{
+        textarea{
+            width: 276px;
+        }
+    } 
+    
+    .contenedorMapa{
+        margin: 40px 0;
+    }
+
+    .button{
+        width: 70px;
+        padding: 0px;
+    }
+
+    .iconosHeder{
+        img {
+            width: 40px;
+        }
+    }
+    
+    .iconosHeder{
+        span{
+            p {
+                font-size: 10px;
+            }
+        }
+    } 
+
+    .iconosHeder{
+        span{
+            margin: 0;
+        }
+    }
+    
+    .carousel-inner {
+        height: auto;
+    }
+
+    .aside{
+        width: 100px !important;
+        padding: 30px  0 !important;
+    }
+    
+    .btn{
+        font-size: 15px !important;
+    } 
+    
+    .aside{
+        ul {
+            padding: 1px;
+            font-size: 15px;
+        }
+    } 
+    
+}

@@ -1,0 +1,82 @@
+@import "variables";
+
+/* DESDE EL PRIMER QUIEBRE PARA ABAJO ME VA A APLICAR ESTOS CAMBIOS */
+@media screen and (max-width: $primerQuiebre ) {
+    h1 {
+        font-size: 5rem;
+        transform: translate(0px,-23px);
+    }
+
+    .barraHeader {
+        height: 147px;
+    }
+
+    nav{
+        ul{
+            li{
+                padding: 0 11px;
+                font-size: 4vh;
+            } 
+        }
+    }
+
+    .camposDeTexto{
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 122, 39, 0.477);
+    }
+
+    .multimedia img{
+        margin: 3px 5px; 
+    }    
+
+    .contenedorNosotros{
+        span{
+            margin-bottom: 20px;
+        }
+    } 
+
+    .contenedorContacto{
+        section{
+            border: solid 1px rgb(195, 195, 195);        
+        }
+    } 
+    .formContacto{
+        width: 436px;
+    }
+
+    .productoView {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+        grid-template-areas: 
+            "foto"
+            "fotosMiniatura"
+            "descripcion"; 
+        margin: 5px;    
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+    .iconosHeder {
+        img {
+            width: 40px;
+        }
+    }
+    .iconosHeder{
+        span{
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+    .iconosHeder{
+        span{
+            margin: 0;
+        }
+    } 
+    .contenedorMapa{
+        margin: 40px 0;
+    }
+}

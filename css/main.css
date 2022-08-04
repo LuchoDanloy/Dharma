@@ -159,7 +159,7 @@ footer div span ul li{  /* imegenes de redes sociales */
     text-align: center;
 } */
 
-.contenedorInicio{
+/* .contenedorInicio{
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -170,7 +170,7 @@ footer div span ul li{  /* imegenes de redes sociales */
     height: 200px;
     background-color: rgba(255, 255, 255, 0.195);; 
     padding-left: 10px;
-}
+} */
 
 .shadowRigth{
     box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
@@ -322,9 +322,9 @@ footer div span ul li{  /* imegenes de redes sociales */
 }
 
 
-.importes{
+/* .importes{
     color: #ff7a27;
-}
+} */
 
 .productoView {
     display: grid; 
@@ -417,16 +417,6 @@ footer div span ul li{  /* imegenes de redes sociales */
     height: 35px;
 }
 
-
-/* .contenedorContacto{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 30px 0;
-    padding: 30px 0;
-    border-top: solid 1px rgb(195, 195, 195);
-} */
-
 .contenedorContacto{
     display: flex;
     justify-content: space-evenly;
@@ -436,7 +426,7 @@ footer div span ul li{  /* imegenes de redes sociales */
     border-top: solid 1px rgb(195, 195, 195);
 }
 
-.formContacto{
+/* .formContacto{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -447,7 +437,7 @@ footer div span ul li{  /* imegenes de redes sociales */
 
 .formContacto div{
     padding: 10px 0;
-}
+} */
 
 .contenedorMapa{
     display: flex;
@@ -463,25 +453,25 @@ footer div span ul li{  /* imegenes de redes sociales */
    
 }
 
-.contenedorNosotros{
+/* .contenedorNosotros{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px 0;
     padding: 30px 0;
-}
+} */
 
-.contenedorProductos{
+/* .contenedorProductos{
     margin: 30px 0;
     padding: 30px 0;
     border-top: solid 1px rgb(195, 195, 195);
-}
+} */
 
 
 
-#nrodocumento{
+/* #nrodocumento{
     width: 100px;
-}
+} */
 
 .button {
     font-family: Arial, Helvetica, sans-serif;
@@ -490,10 +480,10 @@ footer div span ul li{  /* imegenes de redes sociales */
     height: 40px;
 }
 
-.flexRowColumn{
+/* .flexRowColumn{
     display: flex;
     flex-direction: row;
-}
+} */
 
 /*CLASES DE BOOTSTRAP MODIFICADAS O ADAPTADAS*/
 
@@ -537,7 +527,6 @@ footer div span ul li{  /* imegenes de redes sociales */
     font-size: 30px;
     box-shadow: 2px 2px 3px #999;
     animation-delay: 2s;
-
 }
 
 .whatsapp:hover{
@@ -600,18 +589,16 @@ footer div span ul li{  /* imegenes de redes sociales */
     }
 
     .contenedorNosotros span{
-/*         width: 80%;
-        margin: 0px; */
         margin-bottom: 20px;
     }
 
-    .imagenChica{
+/*     .imagenChica{
         display: block;
     }
 
     .imagenGrande{
         display: none;
-    }
+    } */
 
     .contenedorContacto section{
         border: solid 1px rgb(195, 195, 195);        
@@ -631,9 +618,9 @@ footer div span ul li{  /* imegenes de redes sociales */
         margin: 5px;    
     }
         
-    .fotosMiniatura{
+/*     .fotosMiniatura{
         justify-content: space-evenly;
-    }
+    } */
 
     .carousel-inner {
         height: auto;

@@ -3,3 +3,21 @@
 body {
     background: $body-background-color;
 }
+
+//CLASE PARA EL BUSCAR PRODUCTOS QUE APARECE EN PRODUCTOS Y PRODUCTOS-VIEW
+.buscadorProductos{
+    text-align: center;
+    padding: 40px;
+}
+
+//BARRA DE BUSQUEDA
+.camposDeTexto{
+    width: 400px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 122, 39, 0.477);
+}
+
+.containerIndex{
+    margin-bottom: 50px;
+}
