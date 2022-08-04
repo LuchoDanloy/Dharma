@@ -1,0 +1,30 @@
+@import "variables";
+
+/* NAV */
+nav{
+    padding: 8px;
+    text-align: center;
+    background-color: $nav-color;
+
+    ul{
+         li{
+            list-style: none;
+            display: inline-block;
+            padding: 0 40px;
+            font-family: $nav-font-family;
+            font-size: $nav-font-size;
+
+            a{
+                color: $nav-font-color;
+            }
+         }
+    }
+
+    a & :hover{
+        text-decoration: underline; 
+    }
+}
+
+a{
+    text-decoration: none;
+}

@@ -13,7 +13,6 @@ h1 {
     font-family: 'Smooch', cursive;
     text-align: center;
     text-shadow: 7px 4px 4px rgb(108 108 108 / 50%);
-/*     padding-bottom: 50px; */
     display: flex;
     justify-content: center;
     transform: translate(0px,-23px);
@@ -62,7 +61,6 @@ nav a:hover{
 
 
 body {
-    /* background-color: #ffe4d3; */
     background: linear-gradient(90deg, #ffe4d3 0%,#ffaa75 100%);
 }
 
@@ -144,9 +142,9 @@ footer div span ul li{  /* imegenes de redes sociales */
     font-size: 20px;
 }
 
-.centrado{
+/* .centrado{
     text-align: center;
-}
+} */
 
 .contenedorInicio{
     display: flex;
