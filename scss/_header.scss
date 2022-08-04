@@ -1,0 +1,23 @@
+@import "variables";
+
+/* HEADER */
+.barraHeader {
+    background: $header-background;
+    height: $header-height;
+}
+
+.iconosHeder {
+    text-align: right;
+    margin-right: 20px;
+
+    img{
+        margin: 10px;
+        width: 50px;
+        object-fit: contain;
+        
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2); 
+        }
+    }
+}

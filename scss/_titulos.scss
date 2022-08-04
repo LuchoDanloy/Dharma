@@ -1,0 +1,40 @@
+@import "variables";
+
+/* TITULOS */
+h1{
+    color: $titulos-font-color;
+    font-size: $titulos-h1-font-size;
+    font-family: $titulos-h1-font-family;
+    text-align: center;
+    text-shadow: 7px 4px 4px #6c6c6c80;
+    display: flex;
+    justify-content: center;
+    transform: translate(0px,-23px);
+}
+
+h2{
+    padding-top: 40px ;
+    font-family: $titulos-h2-font-family;
+}
+
+h3 {
+    color: $titulos-h3-color;
+    font-family: $titulos-h3-Contacto-font-family;
+    text-align: center;
+}
+
+h5{
+    color: $titulos-h5-color;
+}
+
+.titulos{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+
+    .titulosPrimarios{
+        font-size: 3rem;
+    }
+    .titulosSecundarios{
+        font-size: 2rem;
+    }
+}

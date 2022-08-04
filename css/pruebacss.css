@@ -1,0 +1,97 @@
+/* RESETEAMOS MARGENES, PADDINGS, ETC */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(90deg, #ffe4d3 0%, #ffaa75 100%); }
+
+/* TITULOS */
+h1 {
+  color: #ffffff;
+  font-size: 7rem;
+  font-family: "Smooch", cursive;
+  text-align: center;
+  text-shadow: 7px 4px 4px #6c6c6c80;
+  display: flex;
+  justify-content: center;
+  transform: translate(0px, -23px); }
+
+h2 {
+  padding-top: 40px;
+  font-family: "Bebas Neue", cursive; }
+
+h3 {
+  color: #e00404;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; }
+
+h5 {
+  color: #585757; }
+
+.titulos {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive; }
+  .titulos .titulosPrimarios {
+    font-size: 3rem; }
+  .titulos .titulosSecundarios {
+    font-size: 2rem; }
+
+/* HEADER */
+.barraHeader {
+  background: linear-gradient(90deg, #ffe4d3 0%, #ffaa75 100%);
+  height: 195px; }
+
+.iconosHeder {
+  text-align: right;
+  margin-right: 20px; }
+  .iconosHeder img {
+    margin: 10px;
+    width: 50px;
+    object-fit: contain; }
+    .iconosHeder img:hover {
+      cursor: pointer;
+      transform: scale(1.2); }
+
+/* NAV */
+nav {
+  padding: 8px;
+  text-align: center;
+  background-color: #fef0e7; }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 40px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 5vh; }
+    nav ul li a {
+      color: #ff7700; }
+  a nav :hover {
+    text-decoration: underline; }
+
+a {
+  text-decoration: none; }
+
+/* FOOTER */
+footer {
+  background: linear-gradient(90deg, #ffe4d3 0%, #ff7a27 100%);
+  height: 120px;
+  margin-top: 70x;
+  padding-top: 10px; }
+  footer p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    padding: 5px; }
+  footer div {
+    text-align: center; }
+    footer div span ul li {
+      /* imegenes de redes sociales */
+      display: inline;
+      margin: 10px; }
+  footer img {
+    width: 50px;
+    object-fit: contain; }
+    footer img:hover {
+      cursor: pointer;
+      transform: scale(1.2); }

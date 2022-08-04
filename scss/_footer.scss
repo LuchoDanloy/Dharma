@@ -1,0 +1,36 @@
+@import "variables";
+
+/* FOOTER */
+footer{
+
+    background: $footer-background-color;
+    height: $footer-height;
+    margin-top: 70x;
+    padding-top: 10px;
+
+    p{    
+        font-family: 'Bebas Neue', cursive;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    div {
+        text-align: center;
+
+        span ul li{  /* imegenes de redes sociales */
+            display: inline;
+            margin: 10px;
+        }
+    }
+
+    img{
+        width: 50px;
+        object-fit: contain;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+}
