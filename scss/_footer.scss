@@ -1,4 +1,11 @@
 @import "variables";
+@import "maps";
+
+//EXTEND
+.iconos-redes{
+    @include size(auto, 100px, 10px);
+    display: inline;
+}
 
 /* FOOTER */
 footer{
@@ -10,17 +17,16 @@ footer{
 
     p{    
         font-family: 'Bebas Neue', cursive;
-        font-size: 15px;
-        padding: 5px;
+        font-size: 20px;
     }
 
     div {
         text-align: center;
 
-        span ul li{  /* imegenes de redes sociales */
-            display: inline;
-            margin: 10px;
-        }
+        span ul li{  
+            @extend .iconos-redes;
+        } 
+
     }
 
     img{
@@ -33,4 +39,15 @@ footer{
         }
     }
 
+}
+
+
+/* MAPS REDES*/
+@each $red, $color in $redes {
+    .red-#{$red}{
+        height: auto;
+        display: inline;
+        margin: 10px;
+        color: $color;
+    }
 }

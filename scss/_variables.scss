@@ -28,9 +28,18 @@ $body-background-color: linear-gradient(90deg, #ffe4d3 0%,#ffaa75 100%);
 $footer-background-color:linear-gradient(90deg, #ffe4d3 0%,#ff7a27 100%);
 $footer-height:120px;
 
-//WHATSAPP
-$Whatsapp-color: #0df053;
+//REDES
+$whatsapp-color: #0df053;
+$facebook-color:#3b5998;
+$twitter-color:#00acee;
+$instagram-color: #ee0073;
 
+//MIXINS 
+@mixin size($alto, $ancho, $espaciado) {
+    height:$alto;
+    width: $ancho;
+    margin: $espaciado;
+}
 
 //*****MEDIAQUERYS******
 

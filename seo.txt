@@ -1,0 +1,47 @@
+General:    
+    -Se eliminaron los archivos de prueba.scss y prueba.css para crear un compilador.
+    -Creacion de mixins size para ser utilizado en el resto de los archivos.
+    -Map para las redes sociales.
+
+index.html:
+    -linkeo main.css y se borro comentarios de .css viejos
+    -keywords: "Dharma, ropa, moda, mujer, hombre, villa cañas, tienda, informal, formal, conjuntos,
+     accesorios, cartujano, mechi seligmann"
+    -title: Inicio.
+    -Favicon: se agrega favicon.
+    -Description: "Dharma - Ropa Formal e Informal"
+    -mejora de los tamaños de fuente de los textos
+
+nosotros.html:
+    -linkeo main.css y se borro comentarios de .css viejos
+    -keywords: "Dharma, nosotros, personas, ropa, moda, mujer, hombre, villa cañas, tienda,
+    tendencia, redes sociales, telefono, fiestas, eventos, vestite"
+    -title: Nosotros.
+    -Favicon: se agrega favicon.
+    -Description: "Dharma - Nuestro Lema"
+
+productos.html:
+    -linkeo main.css y se borro comentarios de .css viejos
+    -keywords:  "Dharma, productos , ofertas, ropa, moda, mujer, hombre, niños, villa cañas,
+    tienda, tendencia, fiestas, eventos, vestite, pantalones, Sweaters, camperas, jean, camisa,
+    remera, traje de baño, sale, hotsale, precios"
+    -title: Productos.
+    -Favicon: se agrega favicon.
+    -Description: "Dharma - Catalogo Productos"
+
+productosView.html:
+    -linkeo main.css y se borro comentarios de .css viejos
+    -keywords:  "Dharma, productos , oferta, ropa, moda, mujer, hombre, niños, villa cañas, 
+    tienda, fiestas, eventos, vestido, pantalon, Sweater, campera, jean, camisa, remera, traje de baño,
+    sale, hotsale, precio, Talles, codigo, comprar, cantidad, modelos, colores"
+    -title: Productos-View.
+    -Favicon: se agrega favicon.
+    -Description: "Dharma - Ofertas/Moda/Talles"
+
+contacto.html:
+    -linkeo main.css y se borro comentarios de .css viejos
+    -keywords: "Dharma, contacto, email, mensaje, escribinos, ropa, moda, mujer, hombre, villa cañas, tienda, direccion, mapa, encontranos"
+    -title: Contacto.
+    -Favicon: se agrega favicon.
+    -Description: "Dharma - Contactanos y Encontranos"
+
