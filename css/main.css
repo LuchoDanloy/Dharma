@@ -56,6 +56,11 @@ h5 {
   font-size: 25px; }
 
 /* HEADER */
+.comunicacion {
+  background-color: #ff7700;
+  text-align: center;
+  color: white; }
+
 .barraHeader {
   background: linear-gradient(90deg, #ffe4d3 0%, #ffaa75 100%);
   height: 195px; }
@@ -203,20 +208,15 @@ footer {
 
 .aside {
   grid-area: aside;
-  width: 150px !important;
-  padding: 20px;
+  width: 200px !important;
+  padding: 30px 3px;
   font-family: 'Bebas Neue', cursive;
-  background-color: #fef0e786;
-  border: solid 1px #9b9b9b; }
-  .aside a {
-    color: #ff4545; }
-    .aside a:hover {
-      background-color: #ff7700;
-      color: white !important; }
+  background-color: #ff620089;
+  border: solid 1px #ffffff; }
   .aside ul {
     list-style: none;
     padding: 5px;
-    font-size: 18px;
+    font-size: 20px;
     /* Hijos de la lista aside*/ }
     .aside ul ul li {
       margin: 5px 0;
@@ -224,6 +224,11 @@ footer {
   .aside li:hover {
     background-color: white;
     border-radius: 5px; }
+  .aside li li:hover {
+    background-color: #ff620089;
+    border-radius: 5px; }
+  .aside .btn {
+    font-size: 25px !important; }
 
 .btn {
   font-size: 18px !important; }
@@ -233,12 +238,12 @@ footer {
   border: 2px solid;
   padding: 10px;
   background-color: #fef0e786;
-  border: solid 1px #9b9b9b; }
+  border: solid 1px #ffffff; }
 
 .galeria {
   grid-area: galeria;
   background-color: #fef0e786;
-  border: solid 1px #9b9b9b;
+  border: solid 1px #ffffff;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
@@ -367,7 +372,7 @@ footer {
 
 .bigicon {
   font-size: 30px !important;
-  color: #36A0FF; }
+  color: #ffffff96; }
 
 .form-group {
   padding: 5px; }
@@ -376,7 +381,14 @@ footer {
 @media screen and (max-width: 710px) {
   h1 {
     font-size: 5rem;
-    transform: translate(0px, -23px); }
+    transform: translate(0px, -60px);
+    color: #ffffff;
+    font-size: 7rem;
+    font-family: "Smooch", cursive;
+    text-align: center;
+    text-shadow: 7px 4px 4px #6c6c6c80;
+    display: flex;
+    justify-content: center; }
   .barraHeader {
     height: 147px; }
   nav ul li {
@@ -411,10 +423,23 @@ footer {
   .iconosHeder span {
     margin: 0; }
   .contenedorMapa {
-    margin: 40px 0; } }
+    margin: 40px 0; }
+  .aside {
+    width: 150px !important; }
+  .btn {
+    font-size: 18px !important; } }
 
 /* DESDE EL SEGUNDO QUIEBRE PARA ABAJO ME VAN A APLICAR ESTOS CAMBIOS */
 @media screen and (max-width: 481px) {
+  h1 {
+    justify-content: left;
+    font-size: 3.5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #ff7700;
+    background: linear-gradient(180deg, #ff7700 0%, #ffe4d3 100%);
+    transform: translate(16px, -78px); }
   nav ul {
     display: flex;
     flex-direction: column; }

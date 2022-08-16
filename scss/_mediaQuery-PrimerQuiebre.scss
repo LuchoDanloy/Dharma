@@ -4,7 +4,14 @@
 @media screen and (max-width: $primerQuiebre ) {
     h1 {
         font-size: 5rem;
-        transform: translate(0px,-23px);
+        transform: translate(0px,-60px);
+        color: $titulos-font-color;
+        font-size: $titulos-h1-font-size;
+        font-family: $titulos-h1-font-family;
+        text-align: center;
+        text-shadow: 7px 4px 4px #6c6c6c80;
+        display: flex;
+        justify-content: center;
     }
 
     .barraHeader {
@@ -82,5 +89,12 @@
     } 
     .contenedorMapa{
         margin: 40px 0;
+    }
+
+    .aside{
+        width: 150px !important;
+    }
+    .btn{
+        font-size: 18px !important;
     }
 }

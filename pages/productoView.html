@@ -30,13 +30,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- KEYWORDS -->
-    <meta name="keywords" content="Dharma, productos , oferta, ropa, moda, mujer, hombre, niños, villa cañas, 
-    tienda, fiestas, eventos, vestido, pantalon, Sweater, campera, jean, camisa, remera, traje de baño,
-    sale, hotsale, precio, Talles, codigo, comprar, cantidad, modelos, colores">
+    <meta name="keywords" content="productos , oferta, ropa, eventos, fiestas">
 
     <!-- FAVICON -->
-    <link rel="icon" href="https://thumbs.dreamstime.com/b/s%C3%ADmbolo-de-dharma-wheel-muestra-la-religi%C3%B3n-del-budismo-oro-l%C3%ADnea-icono-dharmachakra-ilustraci-n-vector-155287951.jpg">
-    
+    <link rel="icon" href="https://es.seaicons.com/wp-content/uploads/2015/06/sun-icon.png">
+        
     <!-- DESCRIPTION -->
     <meta name="description" content="Dharma - Ofertas/Moda/Talles">
     
@@ -77,6 +75,9 @@
             <li class="nav-item">
               <a class="nav-link" href="productos.html">Productos</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="talles.html">Talles</a>
+            </li>   
             <li class="nav-item">
               <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
@@ -125,7 +126,26 @@
                     <p class="codigo">Codigo 5465</p>
                     <p class="stock">En Stock</p>
                     <p class="precio">$5000</p>
-                    <p class="codigo">Talles: S - M - L - XL - XXL</p>
+                    <p class="codigo">Talles:
+                        <br>
+                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option1">S</label>
+                        
+                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-secondary" for="option2">M</label>
+                        
+                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+                        <label class="btn btn-secondary" for="option3">L</label>
+                        
+                        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                        <label class="btn btn-secondary" for="option4">XL</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                        <label class="btn btn-secondary" for="option5">XXL</label>
+
+                        <a href="talles.html" class="btn btn-link">Encontra tu talle</a>
+                    </p>
+
                     <input type="number" class="cantidad" id="cantidad" name="cantidad" min="1" max="100" value="1">
                     <a href="#" class="btn btn-dark">Comprar</a>
                 </div>

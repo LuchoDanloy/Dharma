@@ -2,6 +2,18 @@
 
 /* DESDE EL SEGUNDO QUIEBRE PARA ABAJO ME VAN A APLICAR ESTOS CAMBIOS */
 @media screen and (max-width: $segundoQuiebre ) {
+
+    h1{
+        justify-content: left;
+        font-size: 3.5rem;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgb(255,119,0);
+        background: linear-gradient(180deg, rgba(255,119,0,1) 0%, rgba(255,228,211,1) 100%);
+        transform: translate(16px, -78px);
+    }
+
     nav{
         ul{
             display: flex;
