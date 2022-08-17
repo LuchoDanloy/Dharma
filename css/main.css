@@ -181,8 +181,10 @@ footer {
   margin: 1px;
   position: fixed;
   line-height: 55px;
-  top: 88%;
-  left: 90%;
+  /*     top: 88%;
+    left: 90%; */
+  right: 20px;
+  bottom: 30px;
   background: #0df053;
   color: #fff;
   border-radius: 55px;
