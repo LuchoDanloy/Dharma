@@ -5,9 +5,12 @@
 /* HEADER */
 
 .comunicacion{
-    background-color: $nav-font-color;
+    background-color: #FF9673;
     text-align: center;
     color: white;
+    img{
+        max-width: 100%;
+    }
 }
 
 .barraHeader {

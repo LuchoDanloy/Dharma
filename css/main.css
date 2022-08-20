@@ -57,9 +57,11 @@ h5 {
 
 /* HEADER */
 .comunicacion {
-  background-color: #ff7700;
+  background-color: #FF9673;
   text-align: center;
   color: white; }
+  .comunicacion img {
+    max-width: 100%; }
 
 .barraHeader {
   background: linear-gradient(90deg, #ffe4d3 0%, #ffaa75 100%);
@@ -194,6 +196,16 @@ footer {
     text-decoration: none !important;
     color: #fff !important;
     transform: scale(1.3) !important; }
+
+.frente {
+  /*     margin: 30px 0; */
+  width: 100%;
+  height: 50vh;
+  background: url(https://images.pexels.com/photos/5531541/pexels-photo-5531541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .grillaCentrada {
   display: flex;
