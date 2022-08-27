@@ -9,7 +9,13 @@ body {
 
 .buscadorProductos {
   text-align: center;
-  padding: 40px; }
+  margin: 10px 0;
+  padding: 40px;
+  /* background-color: $barrabusqueda-background-color; */
+  background-color: #ffeee6;
+  position: sticky;
+  top: 0;
+  z-index: 100; }
 
 .camposDeTexto {
   width: 400px;
@@ -198,7 +204,7 @@ footer {
     transform: scale(1.3) !important; }
 
 .frente {
-  /*     margin: 30px 0; */
+  margin-bottom: 30px;
   width: 100%;
   height: 50vh;
   background: url(https://images.pexels.com/photos/5531541/pexels-photo-5531541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -223,24 +229,36 @@ footer {
   width: 200px !important;
   padding: 30px 3px;
   font-family: 'Bebas Neue', cursive;
-  background-color: #ff620089;
-  border: solid 1px #ffffff; }
+  background-color: #ffeee6;
+  border: 1px solid rgba(255, 122, 39, 0.477); }
   .aside ul {
     list-style: none;
     padding: 5px;
     font-size: 20px;
+    border-radius: 3px;
     /* Hijos de la lista aside*/ }
     .aside ul ul li {
       margin: 5px 0;
-      padding: 0 20px; }
-  .aside li:hover {
-    background-color: white;
-    border-radius: 5px; }
-  .aside li li:hover {
-    background-color: #ff620089;
-    border-radius: 5px; }
+      padding: 0 20px;
+      background-color: #fef0e7; }
+      .aside ul ul li a {
+        width: 100%; }
+  .aside li {
+    margin: 1px 0;
+    border-radius: 5px;
+    background-color: #ffac7875;
+    box-shadow: -2px -1px 10px -2px rgba(120, 120, 120, 0.75);
+    -webkit-box-shadow: -2px -1px 10px -2px rgba(120, 120, 120, 0.75);
+    -moz-box-shadow: -2px -1px 10px -2px rgba(120, 120, 120, 0.75); }
+    .aside li:hover {
+      background-color: white;
+      border-radius: 3px; }
+    .aside li li:hover {
+      background-color: #ffac7875;
+      border-radius: 3px; }
   .aside .btn {
-    font-size: 25px !important; }
+    font-size: 25px !important;
+    width: 100%; }
 
 .btn {
   font-size: 18px !important; }
@@ -250,12 +268,12 @@ footer {
   border: 2px solid;
   padding: 10px;
   background-color: #fef0e786;
-  border: solid 1px #ffffff; }
+  border: 1px solid rgba(255, 122, 39, 0.477); }
 
 .galeria {
   grid-area: galeria;
   background-color: #fef0e786;
-  border: solid 1px #ffffff;
+  border: 1px solid rgba(255, 122, 39, 0.477);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }

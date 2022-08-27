@@ -7,7 +7,13 @@ body {
 //CLASE PARA EL BUSCAR PRODUCTOS QUE APARECE EN PRODUCTOS Y PRODUCTOS-VIEW
 .buscadorProductos{
     text-align: center;
+    margin: 10px 0;
     padding: 40px;
+    /* background-color: $barrabusqueda-background-color; */
+    background-color:$aside-background-color;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 //BARRA DE BUSQUEDA
