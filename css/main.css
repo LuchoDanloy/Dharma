@@ -359,7 +359,7 @@ footer {
   font-size: 13px; }
 
 .precio {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: red;
   font-size: 20px; }
 
