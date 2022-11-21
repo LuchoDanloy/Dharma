@@ -1,0 +1,6 @@
+[
+    {"id":1, "nombre":"MODELO LUIS", "descripcion":"CAMISA DE ALGODON", "precio":6000, "img":"https://static.zara.net/photos///2022/S/0/2/p/3929/375/251/2/w/288/3929375251_6_1_1.jpg?ts=1666941533125"},
+    {"id":2, "nombre":"MODELO PEDRO", "descripcion":"CAMISA DE ALGODON", "precio":8000, "img":"https://static.zara.net/photos///2022/S/0/2/p/3929/375/401/2/w/288/3929375401_6_1_1.jpg?ts=1666941533367"},
+    {"id":3, "nombre":"MODELO MANU", "descripcion":"CAMISA DE ALGODON", "precio":5000, "img":"https://static.zara.net/photos///2022/S/0/2/p/3929/375/700/2/w/288/3929375700_6_1_1.jpg?ts=1666784187845"},
+    {"id":4, "nombre":"MODELO LUCIANO", "descripcion":"CAMISA DE ALGODON", "precio":9000, "img":"https://static.zara.net/photos///2022/S/0/2/p/3929/375/802/2/w/288/3929375802_6_1_1.jpg?ts=1666941535540"}
+]

@@ -10,34 +10,85 @@ class Producto {
     }
 }
 
-//DEFINO LOS OBJETOS
-const florencia = new Producto(1, "Conjunto Florencia", "Conjunto de algodon.", 5000, "https://www.surmujer.cl/17854_pic/cdn-5_Ch%C3%A1ndal-de-ni%C3%B1os-2020-oto%C3%B1o-sudadera-de-manga-larga.jpg");
-const silvana = new Producto(2, "Conjunto Silvana", "Conjunto de morley.", 6000, "https://ae01.alicdn.com/kf/H43e91c025b0441fd8c251024fe0870ccc/Nuevo-dise-o-2021-de-moda-de-las-mujeres-conjuntos-de-sudaderas-Casual-primavera-top-corto.jpg_Q90.jpg_.webp");
-const bahia = new Producto(3, "Sweater Bahia", "Sweater de lana.", 5000, "https://primedia.primark.com/s/primark/210039957_ms?locale=en-*,sl-*,*&$product-thumbnail$");
-const claudia = new Producto(4, "Conjunto Claudia", "conjunto de seda.", 8000, "https://ae01.alicdn.com/kf/H9f65ff3b70ac432aaa0b7f4ab05d7d03i/Traje-de-gasa-para-ni-as-conjunto-de-ropa-sin-mangas-pantalones-cortos-de-ocio-conjuntos.jpg");
-const beatriz = new Producto(5, "Conjunto Beatriz", "conjunto frizado.", 9000, "https://ae01.alicdn.com/kf/Hacf6f84bc5624c48bdeb3f9ed18ccf29I/Conjuntos-de-12-prendas-de-vestir-para-ni-as-10-Pantalones-cortos-traje-para-beb-s.jpg");
-const zoe = new Producto(6, "Conjunto Zoe", "Conjunto niña.", 5000, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnoxtx44FrHVst9cth8kmMkdywkC2jL-m3u6xZY-BVbKetUl6eUhaij13Ld6T4b-IHSIE&usqp=CAU");
-const lara = new Producto(7, "Conjunto Lara", "Calza y remera.", 3000, "https://ae01.alicdn.com/kf/HTB17Iv7RVXXXXc6XpXXq6xXFXXXw/Conjunto-de-ropa-para-ni-os-peque-os-de-0-a-24-meses-camiseta-con-pesta.jpg");
-const rock = new Producto(8, "Campera Rock", "campera de cuero.", 18000, "https://rotulwork.es/wp-content/uploads/2018/11/220-WORKSHELL-SPORT-S8640-700x700.jpg");
-const sleep = new Producto(9, "Conjunto Sleep", "Pijama de seda.", 4000, "https://media.nidux.net/pull/700/700/10876/8546-product-626868a98c0ba-4080102103.jpg");
-const bed = new Producto(10, "Conjunto Bed", "Pijama de algodon.", 5000, "https://media.nidux.net/pull/700/700/10876/9636-product-62cda675a264f-4080103002.jpg");
-
-//ARREGLO CON TODOS NUSTROS PRODUCTOS
-const productos = [florencia, silvana, bahia, claudia, beatriz, zoe, lara, rock, sleep, bed];
+//ARREGLO CON NUSTROS PRODUCTOS
+let productos = [];
 
 //CREAMOS EL CARRITO VACIO
 let carrito = [];
+
 
 //SI HAY ALGO EN EL LOCALSTORAGE LO CARGAMOS AL CARRITO.
 if(localStorage.getItem("carrito")){
     carrito = JSON.parse(localStorage.getItem("carrito")); 
 }
 
+//MOSTRAR NIÑOS
+const conjuntos = document.getElementById("niñosConjuntos")
+conjuntos.addEventListener("click", () =>{
+    inicializarProductos("../json/niños/conjuntos.json");
+    mostrarTituloCategoria("NIÑOS");
+    mostrarTituloGaleria("NIÑOS / CONJUNTOS");
+})
+
+//MOSTRAR HOMBRE
+const camisaHombre = document.getElementById("hombreCamisas")
+camisaHombre.addEventListener("click", () =>{
+    inicializarProductos("../json/hombre/camisas.json");
+    mostrarTituloCategoria("HOMBRE");
+    mostrarTituloGaleria("HOMBRE / CAMISAS");
+})
+
+const jeansaHombre = document.getElementById("hombreJeans")
+jeansaHombre.addEventListener("click", () =>{
+    inicializarProductos("../json/hombre/jeans.json");
+    mostrarTituloCategoria("HOMBRE");
+    mostrarTituloGaleria("HOMBRE / JEANS");
+})
+
+//MOSTRAR MUJER
+const pantalonesMujer = document.getElementById("mujerPantalones")
+pantalonesMujer.addEventListener("click", () =>{
+    inicializarProductos("../json/mujer/pantalones.json");
+    mostrarTituloCategoria("MUJER");
+    mostrarTituloGaleria("MUJER / PANTALONES");
+})
+
+//FUNCION PARA INICIALIZAR PRODUCTOS
+const inicializarProductos = (url) => {
+    productos = [];
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then(datos =>{
+        productos = [];
+        datos.forEach( producto => {
+            const prod = new Producto(producto.id, producto.nombre, producto.descripcion, producto.precio, producto.img);
+            productos.push(prod);
+        })
+        console.log(productos);
+    })
+    .catch(error => console.log(error))
+    .finally( () => mostrarproductos())
+}
+
+//TITULO CATEGORIA
+const mostrarTituloCategoria = (titulo) => {
+    const tituloCategoria = document.getElementById("tituloCategoria");
+    tituloCategoria.textContent=titulo;
+}
+
+//TITULO GALERIA
+const mostrarTituloGaleria = (titulo) => {
+    const tituloGaleria = document.getElementById("tituloGaleria");
+    tituloGaleria.textContent=titulo; 
+}
 
 //MODIFICAMOS EL DOM
 const contenedorCards = document.getElementById("contenedorCards");
+
 //FUNCION PARA MOSTRAR LAS TARJETAS EN EL HTML
 const mostrarproductos = () => {
+    console.log("mostrando productos");
+    contenedorCards.innerHTML="";
     productos.forEach((producto) =>{
         const card= document.createElement("div");
         card.innerHTML= `
@@ -45,10 +96,9 @@ const mostrarproductos = () => {
                     <img src="${producto.img}" class="card-img-top" alt="foto galeria">
                     <div class="card-body">
                     <h5 class="card-title">${producto.nombre}</h5>
-                    <div class="card-text">${producto.descripcion}</div>
                     <div class="card-text stock">En Stock</div>
                     <p class="card-text precio mb-1">$${producto.precio}</p>
-                    <a class="btn btn-outline-primary my-1" href="productoView.html" >Ver</a>
+                    <a class="btn btn-outline-primary my-1" id="ver${producto.id}" >Ver</a>
                     <a class="btn btn-outline-dark" id="boton${producto.id}" >Agregar al Carrito</a>
                     </div>
                 </div>
@@ -61,8 +111,16 @@ const mostrarproductos = () => {
         boton.addEventListener("click", () => {
             agregarAlCarrito(producto.id)
         })
+
+        //VER EL PRODUCTO
+        const ver = document.getElementById(`ver${producto.id}`);
+        ver.addEventListener("click", () => {
+            verProducto(producto.id)
+        })
+
     }) 
 }
+
 
 //FUNCION PARA AGREGAR AL CARRITO
 const agregarAlCarrito = (id) => {
@@ -74,12 +132,33 @@ const agregarAlCarrito = (id) => {
         carrito.push(producto);
     }
 
+    Toastify({
+        text:"Producto Agregado correctamente",
+        duration: 3000,
+        gravity:"bottom",
+        position:"right"
+        
+    }).showToast();
+
     //CARGAMOS AL LOCALSTORAGE
     localStorage.clear();
     localStorage.setItem("carrito",JSON.stringify(carrito));
 
     //LLAMADA A CALCULAR TOTAL;
     calcularTotal();
+}
+
+//VISUALIZAR PRODUCTO
+const verProducto = (id) =>{
+    const producto = productos.find((producto) => producto.id === id);
+    console.log(producto.url);
+    Swal.fire({
+        title: producto.nombre,
+        text: producto.descripcion,
+        imageUrl: producto.img,
+        imageHeight: 400,
+        footer: '<a href="talles.html">VER TABLA DE TALLES</a>'
+      })
 }
 
 //AUMENTAR CANDIDAD
@@ -114,8 +193,6 @@ const reducirCantidad = (id) =>{
     calcularTotal();
 }
 
-//FUNCION QUE SE EJECUTA CUANDO SE CARGA LA PAGINA
-mostrarproductos();
 
 //MOSTRAR EL CARRITO DE COMPRAS
 const contenedorCarrito = document.getElementById("contenedorCarrito");

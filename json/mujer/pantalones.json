@@ -1,0 +1,8 @@
+[
+    {"id":13, "nombre":"PANTALON FLORENCIA", "descripcion":"PANTALÓN JOGGER POPELÍN", "precio":5000, "img":"https://static.zara.net/photos///2022/S/0/1/p/8372/097/505/502/w/288/8372097505_1_1_1.jpg?ts=1666785023789"},
+    {"id":14, "nombre":"PANTALON SILVANA", "descripcion":"PANTALÓN HIGH WAIST", "precio":5000, "img":"https://static.zara.net/photos///2022/S/0/1/p/1608/842/649/2/w/288/1608842649_1_1_1.jpg?ts=1662981975769"},
+    {"id":15, "nombre":"PANTALON CLAUDIA", "descripcion":"PANTALÓN CROPPED CULOTTE", "precio":5000, "img":"https://static.zara.net/photos///2022/I/0/1/p/9929/622/800/17/w/288/9929622800_1_1_1.jpg?ts=1663061148579"},
+    {"id":16, "nombre":"PANTALON BEATRIZ", "descripcion":"PANTALÓN CINTURÓN FORRADO", "precio":5000, "img":"https://static.zara.net/photos///2022/V/0/1/p/2185/940/500/17/w/288/2185940500_1_1_1.jpg?ts=1643301831133"},
+    {"id":17, "nombre":"PANTALON ZOE", "descripcion":"PANTALÓN FLUIDO ESTAMPADO", "precio":5000, "img":"https://static.zara.net/photos///2022/I/0/1/p/5216/245/712/2/w/288/5216245712_1_1_1.jpg?ts=1656512008028"},
+    {"id":18, "nombre":"PANTALON LARA", "descripcion":"PANTALÓN JOGGER WAIST", "precio":5000, "img":"https://static.zara.net/photos///2021/I/0/1/p/1478/025/251/2/w/288/1478025251_1_1_1.jpg?ts=1631187652014"}
+]

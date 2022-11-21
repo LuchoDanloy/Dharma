@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
+    <!-- CSS TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <!--ESTILOS CSS PROPIO-->
     <link rel="stylesheet" href="../css/main.css">
 
@@ -55,7 +58,7 @@
         <!-- CONTENEDOR DHARMA -->
         <div class="barraHeader">
             <div class="iconosHeder">
-                <span>
+                <span id="botonIngresar">
                     <img src="https://cdn-icons-png.flaticon.com/512/2331/2331926.png" alt="icono ingresar">
                     <p>INGRESAR</p>
                 </span>
@@ -98,16 +101,13 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                <a class="nav-link active" aria-current="page" id="productos" href="productos.html">Productos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="talles.html">Talles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
         </ul>
     </nav>
@@ -119,7 +119,7 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col col-lg-12">
-                    <h2 class="centrado titulos titulosPrimarios">Productos</h2>
+                    <h2 class="centrado titulos titulosPrimarios" id="tituloCategoria"></h2>
                 </div>
             </div>
         </div>
@@ -128,8 +128,8 @@
 
             <!--Buscador de Productos-->
             <div class="buscadorProductos">
-                <input class="camposDeTexto" type="text" placeholder="Buscá por producto, marca, categoria...">
-                <button type="button" class="btn btn-light">Buscar</button>
+                <input class="camposDeTexto" id="buscador" type="text" placeholder="Ingrese el nombre del producto...">
+                <button type="button" class="btn btn-light" id="botonBuscar" >Buscar</button>
             </div>
 
             <!-- Grilla de Productos -->
@@ -143,70 +143,39 @@
                             <li class="mb-1">
                                 <button
                                     class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                                    Hombre
+                                    data-bs-toggle="collapse" data-bs-target="#hombre" aria-expanded="false">
+                                    Hombre  
                                 </button>
-                                <div class="collapse" id="home-collapse">
+                                <div class="collapse show" id="hombre">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Pantalones</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Remeras</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Camperas</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Sweaters</a>
-                                        </li>
+                                        <li><a class="link-dark active d-inline-flex text-decoration-none rounded" role="button" aria-pressed="true" id="hombreCamisas">Camisas</a></li>
+                                        <li><a class="link-dark d-inline-flex text-decoration-none rounded" role="button" aria-pressed="true" id="hombreJeans">Jeans</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="mb-1">
                                 <button
                                     class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+                                    data-bs-toggle="collapse" data-bs-target="#mujer"
                                     aria-expanded="false">
                                     Mujer
                                 </button>
-                                <div class="collapse" id="dashboard-collapse">
+                                <div class="collapse" id="mujer">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Pantalones</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Remeras</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Camperas</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Sweaters</a>
-                                        </li>
+                                        <li><a class="link-dark d-inline-flex text-decoration-none rounded" id="mujerPantalones">Pantalones</a></li>
+
                                     </ul>
                                 </div>
                             </li>
                             <li class="mb-1">
                                 <button
                                     class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                    data-bs-toggle="collapse" data-bs-target="#niños" aria-expanded="false">
                                     Niños
                                 </button>
-                                <div class="collapse" id="orders-collapse">
+                                <div class="collapse" id="niños">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Pantalones</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Remeras</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Camperas</a>
-                                        </li>
-                                        <li><a href="#"
-                                                class="link-dark d-inline-flex text-decoration-none rounded">Sweaters</a>
-                                        </li>
+                                        <li><a class="link-dark d-inline-flex text-decoration-none rounded" id="niñosConjuntos">Conjuntos</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -216,7 +185,7 @@
 
                     <!-- TITULOS E INFO DE LA GALERIA -->
                     <div class="tituloGaleria">
-                        <h2>Pantalones</h2>
+                        <h2 id="tituloGaleria"></h2>
                     </div>
 
                     <!-- GALERIA -->
@@ -226,16 +195,6 @@
                 </div>
 
             </div>
-
-            <!-- PAGINACION -->
-
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
 
         </section>
 
@@ -254,19 +213,19 @@
                 <!--Enlaces Absolutos a redes sociales-->
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" target="_blank">
                             <img class="red-instagram" src="https://cdn-icons-png.flaticon.com/512/2111/2111421.png"
                                 alt="Instagram">
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/">
+                        <a href="https://twitter.com/" target="_blank">
                             <img class="red-twitter" src="https://cdn-icons-png.flaticon.com/512/2111/2111703.png"
                                 alt="twitter">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/">
+                        <a href="https://www.facebook.com/" target="_blank">
                             <img class="red-facebook" src="https://cdn-icons-png.flaticon.com/512/2111/2111342.png"
                                 alt="Facebook">
                         </a>
@@ -280,9 +239,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <!-- JAVASCRIPT PROPIO -->
     <script src="../javaScript/productos.js"></script>
+    <script src="../javaScript/main.js"></script>
+    <script src="../javaScript/buscador.js"></script>
+    <script src="../javaScript/ingresar.js"></script>
 </body>
 
 </html>

@@ -125,3 +125,9 @@ const calcularTotal = () => {
     })
     total.innerText = `Total Compra: $${totalCompra}`;
 }
+
+const producto = document.getElementById("producto");
+producto.addEventListener("click", () =>{
+    console.log("producto")
+    camisaHombre.click();
+})
