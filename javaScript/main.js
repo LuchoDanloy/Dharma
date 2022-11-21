@@ -1,6 +1,3 @@
-//CREAMOS EL CARRITO VACIO
-let carrito = [];
-
 //SI HAY ALGO EN EL LOCALSTORAGE LO CARGAMOS AL CARRITO.
 if(localStorage.getItem("carrito")){
     carrito = JSON.parse(localStorage.getItem("carrito")); 
