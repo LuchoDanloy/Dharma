@@ -1,10 +1,13 @@
+
+//CREAMOS EL CARRITO VACIO
+let carrito = [];
+
+
 //SI HAY ALGO EN EL LOCALSTORAGE LO CARGAMOS AL CARRITO.
 if(localStorage.getItem("carrito")){
     carrito = JSON.parse(localStorage.getItem("carrito")); 
 }
 
-
-//MODIFICAMOS EL DOM
 
 //AUMENTAR CANDIDAD
 const aumentarCantidad = (id) =>{
@@ -13,7 +16,7 @@ const aumentarCantidad = (id) =>{
         productoEnCarrito.cantidad++;
     }
     //CARGAMOS AL LOCALSTORAGE
-    localStorage.clear();
+    localStorage.removeItem('carrito');
     localStorage.setItem("carrito",JSON.stringify(carrito));
     mostrarCarrito();
 
@@ -30,13 +33,14 @@ const reducirCantidad = (id) =>{
         }
     }
     //CARGAMOS AL LOCALSTORAGE
-    localStorage.clear();
+    localStorage.removeItem('carrito');
     localStorage.setItem("carrito",JSON.stringify(carrito));
     mostrarCarrito();
 
     //LLAMADA A CALCULAR TOTAL;
     calcularTotal();
 }
+
 
 //MOSTRAR EL CARRITO DE COMPRAS
 const contenedorCarrito = document.getElementById("contenedorCarrito");
@@ -51,19 +55,27 @@ const mostrarCarrito = () => {
     contenedorCarrito.innerHTML="";
     carrito.forEach((producto) =>{
         const offcanvas = document.createElement("div");
+
         offcanvas.innerHTML= ` 
-            <div class="galeria card">
-                <img src="${producto.img}" class="card-img-top w-50"  alt="foto galeria">
-                <h5 class="card-title">${producto.nombre}</h5>
-                <p class="card-text precio">Importe Unit: $${producto.precio}</p>
-                <p class="card-text">Cantidad: ${producto.cantidad} </p>
-                <div class="d-flex justify-content-center my-1">
-                    <button class="btn btn-outline-primary mx-1" id="agregar${producto.id}"> + </button>
-                    <button class="btn btn-outline-primary mx-1" id="restar${producto.id}"> - </button>
+            <div class="cardCarrito">
+                <div class="row">
+                    <div class="col">
+                        <img src="${producto.img}" class="card-img-top"  alt="foto galeria">
+                    </div>
+                    <div class="col">
+                        <h5 class="card-title">${producto.nombre}</h5>
+                        <p class="card-text precio">Importe Unit: $${producto.precio}</p>
+                        <p class="card-text">Cantidad: ${producto.cantidad} </p>
+                        <div class="d-flex justify-content-center my-1">
+                            <button class="btn btn-outline-primary mx-1" id="agregar${producto.id}"> + </button>
+                            <button class="btn btn-outline-primary mx-1" id="restar${producto.id}"> - </button>
+                         </div>
+                         <button class="btn btn-outline-danger d-grid gap-2 col-11 mx-auto" id="eliminar${producto.id}"> Eliminar Producto </button>
+                    </div>
                 </div>
-                <button class="btn btn-outline-danger" id="eliminar${producto.id}"> Eliminar Producto </button>
-            </div>
-        `
+            </div>               
+        ` 
+
         //PARA PEGARLO 
         contenedorCarrito.appendChild(offcanvas);
 
@@ -110,10 +122,30 @@ const vaciarElCarro = () =>{
     carrito=[];
     mostrarCarrito();
     calcularTotal();
+    confirmarCompra.style.display = 'none';
     
     //LIMPIAMOS EL LOCALSTORAGE 
-    localStorage.clear();
+    localStorage.removeItem('carrito');
 }
+
+//FUNCION PARA CONFIRMAR COMPRA
+const confirmarCompra = document.getElementById("confirmarCompra");
+confirmarCompra.addEventListener("click", () =>{
+    if (carrito.length > 0){
+        vaciarElCarro();
+        Swal.fire({
+            icon: 'success',
+            title: '¡Felicidades!',
+            text: 'Tu comprpra llegara pronto',
+          })
+    }else{
+        Swal.fire({
+            icon: 'warning',
+            text: 'No hay productos en el carrito',
+          })        
+    }
+
+})
 
 //FUNCION PARA CALCULAR IMPORTE TOTAL DE PRODUCTOS
 const total = document.getElementById("total");
@@ -125,9 +157,3 @@ const calcularTotal = () => {
     })
     total.innerText = `Total Compra: $${totalCompra}`;
 }
-
-const producto = document.getElementById("producto");
-producto.addEventListener("click", () =>{
-    console.log("producto")
-    camisaHombre.click();
-})

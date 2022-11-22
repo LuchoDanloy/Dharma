@@ -22,6 +22,12 @@ if(localStorage.getItem("carrito")){
     carrito = JSON.parse(localStorage.getItem("carrito")); 
 }
 
+//POR DEFECTO CARGA LA CATEGORIA HOMBRE/JEANS
+window.addEventListener("load", function(event) {
+    jeansaHombre.click();
+});
+
+
 //MOSTRAR NIÑOS
 const conjuntos = document.getElementById("niñosConjuntos")
 conjuntos.addEventListener("click", () =>{
@@ -64,7 +70,6 @@ const inicializarProductos = (url) => {
             const prod = new Producto(producto.id, producto.nombre, producto.descripcion, producto.precio, producto.img);
             productos.push(prod);
         })
-        console.log(productos);
     })
     .catch(error => console.log(error))
     .finally( () => mostrarproductos())
@@ -87,7 +92,6 @@ const contenedorCards = document.getElementById("contenedorCards");
 
 //FUNCION PARA MOSTRAR LAS TARJETAS EN EL HTML
 const mostrarproductos = () => {
-    console.log("mostrando productos");
     contenedorCards.innerHTML="";
     productos.forEach((producto) =>{
         const card= document.createElement("div");
@@ -119,6 +123,7 @@ const mostrarproductos = () => {
         })
 
     }) 
+
 }
 
 
@@ -141,9 +146,10 @@ const agregarAlCarrito = (id) => {
     }).showToast();
 
     //CARGAMOS AL LOCALSTORAGE
-    localStorage.clear();
+    localStorage.removeItem('carrito');
     localStorage.setItem("carrito",JSON.stringify(carrito));
 
+    
     //LLAMADA A CALCULAR TOTAL;
     calcularTotal();
 }
@@ -168,7 +174,7 @@ const aumentarCantidad = (id) =>{
         productoEnCarrito.cantidad++;
     }
     //CARGAMOS AL LOCALSTORAGE
-    localStorage.clear();
+    localStorage.removeItem('carrito');
     localStorage.setItem("carrito",JSON.stringify(carrito));
     mostrarCarrito();
 
@@ -185,7 +191,7 @@ const reducirCantidad = (id) =>{
         }
     }
     //CARGAMOS AL LOCALSTORAGE
-    localStorage.clear();
+    localStorage.removeItem('carrito');
     localStorage.setItem("carrito",JSON.stringify(carrito));
     mostrarCarrito();
 
@@ -207,19 +213,27 @@ const mostrarCarrito = () => {
     contenedorCarrito.innerHTML="";
     carrito.forEach((producto) =>{
         const offcanvas = document.createElement("div");
+
         offcanvas.innerHTML= ` 
-            <div class="galeria card">
-                <img src="${producto.img}" class="card-img-top w-50"  alt="foto galeria">
-                <h5 class="card-title">${producto.nombre}</h5>
-                <p class="card-text precio">Importe Unit: $${producto.precio}</p>
-                <p class="card-text">Cantidad: ${producto.cantidad} </p>
-                <div class="d-flex justify-content-center my-1">
-                    <button class="btn btn-outline-primary mx-1" id="agregar${producto.id}"> + </button>
-                    <button class="btn btn-outline-primary mx-1" id="restar${producto.id}"> - </button>
+            <div class="cardCarrito">
+                <div class="row">
+                    <div class="col">
+                        <img src="${producto.img}" class="card-img-top"  alt="foto galeria">
+                    </div>
+                    <div class="col">
+                        <h5 class="card-title">${producto.nombre}</h5>
+                        <p class="card-text precio">Importe Unit: $${producto.precio}</p>
+                        <p class="card-text">Cantidad: ${producto.cantidad} </p>
+                        <div class="d-flex justify-content-center my-1">
+                            <button class="btn btn-outline-primary mx-1" id="agregar${producto.id}"> + </button>
+                            <button class="btn btn-outline-primary mx-1" id="restar${producto.id}"> - </button>
+                         </div>
+                         <button class="btn btn-outline-danger d-grid gap-2 col-11 mx-auto" id="eliminar${producto.id}"> Eliminar Producto </button>
+                    </div>
                 </div>
-                <button class="btn btn-outline-danger" id="eliminar${producto.id}"> Eliminar Producto </button>
-            </div>
-        `
+            </div>               
+        ` 
+
         //PARA PEGARLO 
         contenedorCarrito.appendChild(offcanvas);
 
@@ -244,7 +258,9 @@ const mostrarCarrito = () => {
         //LLAMADA A CALCULAR TOTAL;
         calcularTotal();
     })
+
 }
+
 //FUNCION PARA ELIMINAR UN PRODUCTO DEL CARRO
 const eliminarDelCarro = (id) => {
     const producto = carrito.find((producto) => producto.id === id);
@@ -268,8 +284,27 @@ const vaciarElCarro = () =>{
     calcularTotal();
     
     //LIMPIAMOS EL LOCALSTORAGE 
-    localStorage.clear();
+    localStorage.removeItem('carrito');
 }
+
+//FUNCION PARA CONFIRMAR COMPRA
+const confirmarCompra = document.getElementById("confirmarCompra");
+confirmarCompra.addEventListener("click", () =>{
+    if (carrito.length > 0){
+        vaciarElCarro();
+        Swal.fire({
+            icon: 'success',
+            title: '¡Felicidades!',
+            text: 'Tu comprpra llegara pronto',
+          })
+    }else{
+        Swal.fire({
+            icon: 'warning',
+            text: 'No hay productos en el carrito',
+          })        
+    }
+
+})
 
 //FUNCION PARA CALCULAR IMPORTE TOTAL DE PRODUCTOS
 const total = document.getElementById("total");

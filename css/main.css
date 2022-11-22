@@ -74,7 +74,7 @@ h5 {
   height: 195px; }
 
 .iconosHeder {
-  text-align: right;
+  text-align: center;
   margin-right: 20px;
   display: flex;
   justify-content: end;
@@ -221,7 +221,10 @@ footer {
   display: grid;
   grid-template-columns: 0.0fr 1fr 1fr 1fr;
   grid-template-rows: 0fr 1.4fr 1fr 1fr;
-  grid-template-areas: "aside tituloGaleria tituloGaleria tituloGaleria" "aside galeria galeria galeria" "aside galeria galeria galeria" "aside galeria galeria galeria";
+  grid-template-areas: "aside tituloGaleria tituloGaleria tituloGaleria"
+ "aside galeria galeria galeria"
+ "aside galeria galeria galeria"
+ "aside galeria galeria galeria";
   width: 90%; }
 
 .aside {
@@ -293,7 +296,8 @@ footer {
   grid-auto-flow: row;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "foto descripcion descripcion" "fotosMiniatura descripcion descripcion";
+  grid-template-areas: "foto descripcion descripcion"
+ "fotosMiniatura descripcion descripcion";
   width: 90%;
   background-color: #fef0e7;
   margin: 40px; }
@@ -407,6 +411,15 @@ footer {
 .form-group {
   padding: 5px; }
 
+.cardCarrito {
+  width: 100%;
+  margin: 7px 2px;
+  box-shadow: 5px 6px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 6px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 6px 14px 0px rgba(0, 0, 0, 0.75);
+  text-align: center; }
+
+
 /* DESDE EL PRIMER QUIEBRE PARA ABAJO ME VA A APLICAR ESTOS CAMBIOS */
 @media screen and (max-width: 710px) {
   h1 {
@@ -442,7 +455,9 @@ footer {
   .productoView {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "foto" "fotosMiniatura" "descripcion";
+    grid-template-areas: "foto"
+ "fotosMiniatura"
+ "descripcion";
     margin: 5px; }
   .carousel-inner {
     height: auto; }
@@ -528,3 +543,4 @@ footer {
   .aside ul {
     padding: 1px;
     font-size: 15px; } }
+  

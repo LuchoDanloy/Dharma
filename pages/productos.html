@@ -58,9 +58,15 @@
         <!-- CONTENEDOR DHARMA -->
         <div class="barraHeader">
             <div class="iconosHeder">
-                <span id="botonIngresar">
+                <span id="datosUsuario" >
+                </span>
+                <span id="botonIngresar" >
                     <img src="https://cdn-icons-png.flaticon.com/512/2331/2331926.png" alt="icono ingresar">
                     <p>INGRESAR</p>
+                </span>
+                <span id="botonSalir" style="display: none">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3094/3094700.png" alt="icono salir">
+                    <p>SALIR</p>
                 </span>
                 <span>
                     <a data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample" id="verCarrito">
@@ -81,6 +87,7 @@
             </div>
             <div>
                 <h5 id="total"></h5>
+                <button type="button" class="btn btn-success col-12 my-1" id="confirmarCompra" >Confirmar Compra</button>
                 <button type="button" class="btn btn-danger col-12" id="vaciarCarrito" >Vaciar Carrito</button>
             </div>
             <div class="offcanvas-body">
@@ -101,7 +108,7 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" id="productos" href="productos.html">Productos</a>
+                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="talles.html">Talles</a>
@@ -133,7 +140,7 @@
             </div>
 
             <!-- Grilla de Productos -->
-            <div class="grillaCentrada">
+            <div class="grillaCentrada" id="grilla">
 
                 <div class="gridProductos">
                     <!-- ASIDE BOOTSTRAP-->
@@ -248,7 +255,6 @@
 
     <!-- JAVASCRIPT PROPIO -->
     <script src="../javaScript/productos.js"></script>
-    <script src="../javaScript/main.js"></script>
     <script src="../javaScript/buscador.js"></script>
     <script src="../javaScript/ingresar.js"></script>
 </body>

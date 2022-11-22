@@ -1,7 +1,7 @@
 [
-    {"id":19, "nombre":"CONJUNTO SOL", "descripcion":"CONJUNTO ALGODON", "precio":5000, "img":"https://www.surmujer.cl/17854_pic/cdn-5_Ch%C3%A1ndal-de-ni%C3%B1os-2020-oto%C3%B1o-sudadera-de-manga-larga.jpg"},
-    {"id":20, "nombre":"CONJUNTO LUNA", "descripcion":"CONJUNTO MORLEY", "precio":5000, "img":"https://ae01.alicdn.com/kf/H43e91c025b0441fd8c251024fe0870ccc/Nuevo-dise-o-2021-de-moda-de-las-mujeres-conjuntos-de-sudaderas-Casual-primavera-top-corto.jpg_Q90.jpg_.webp"},
-    {"id":21, "nombre":"PIJAMA SLEEP", "descripcion":"PIJAMA SEDA", "precio":5000, "img":"https://media.nidux.net/pull/700/700/10876/8546-product-626868a98c0ba-4080102103.jpg"},
-    {"id":22, "nombre":"PIJAMA BED", "descripcion":"PIJAMA ALGODON", "precio":5000, "img":"https://media.nidux.net/pull/700/700/10876/9636-product-62cda675a264f-4080103002.jpg"}
+    {"id":19, "nombre":"CONJUNTO SOL", "descripcion":"CONJUNTO ALGODON DIFERENTES COLORES", "precio":5000, "img":"https://www.surmujer.cl/17854_pic/cdn-5_Ch%C3%A1ndal-de-ni%C3%B1os-2020-oto%C3%B1o-sudadera-de-manga-larga.jpg"},
+    {"id":20, "nombre":"CONJUNTO LUNA", "descripcion":"CONJUNTO MORLEY DIFERENTES COLORES", "precio":5000, "img":"https://ae01.alicdn.com/kf/H43e91c025b0441fd8c251024fe0870ccc/Nuevo-dise-o-2021-de-moda-de-las-mujeres-conjuntos-de-sudaderas-Casual-primavera-top-corto.jpg_Q90.jpg_.webp"},
+    {"id":21, "nombre":"PIJAMA SLEEP", "descripcion":"PIJAMA SEDA DIFERENTES COLORES", "precio":5000, "img":"https://media.nidux.net/pull/700/700/10876/8546-product-626868a98c0ba-4080102103.jpg"},
+    {"id":22, "nombre":"PIJAMA BED", "descripcion":"PIJAMA ALGODON DIFERENTES COLORES", "precio":5000, "img":"https://media.nidux.net/pull/700/700/10876/9636-product-62cda675a264f-4080103002.jpg"}
 
 ]
